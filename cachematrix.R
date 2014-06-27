@@ -9,7 +9,7 @@ makeCacheMatrix <- function(x = matrix()) {
    if(!is.null(x)) {
       dims <- dim(x)
       if(dims[1] != dims[2]) {
-         message("Matrix is not square.  It is not invertable")
+         message("Matrix is not square.  It is not invertible")
       }
    }
    i <- NULL # invalidate inverse before it is set
@@ -20,7 +20,7 @@ makeCacheMatrix <- function(x = matrix()) {
       i <<- NULL
       dims <- dim(y)
       if(dims[1] != dims[2]) {
-         message("Matrix is not square.  It is not invertable")
+         message("Matrix is not square.  It is not invertible")
       }
    }
 
